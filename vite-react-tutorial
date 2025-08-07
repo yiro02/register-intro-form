@@ -1,0 +1,86 @@
+ import { useState, type FormEvent } from "react";
+import  error from './assets/icon-error.svg';
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const Apps: React.FC = () => {
+  return (
+    <div>
+      <img src={error} alt="error" width={32} height={32}/>
+    </div>
+  );
+};
+
+function App() {
+    const [name, setName] = useState("");
+    const [lastName, setLastName] = useState("");
+    const [emailaddres, setemailaddres] = useState("");
+    const [password, setpassword] = useState("");
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+   }
+ if(name == "") {
+      alert("Esta vacio el name")
+     } else {
+    alert(lastName)
+     if(emailaddres == "") {
+      alert("no puede estar Vacio")
+      } else {
+        alert(password)
+      }
+      alert("no puede estar Vacio")
+    }
+    return(
+    
+    <div className="h-screen antialiased bg-[url(/images/bg-intro-desktop.png)] bg-red-400 w-full h-full flex items-center justify-center gap-30 flex-col md:flex-row max-w-2xl96">
+      <div className="text-white text-justify ">
+        <p className="text-5xl font-bold py-6">Learn to code by <br /> watching others</p>
+
+        <p className="text-justify">see how expirenced developers solve problems in real-time.
+          <br /> Watching scripted tutorials is great, but understandig how <br /> developers think is invaluable.
+        </p>
+      </div>
+
+      <div className="flex items-center justify-center flex-col">
+        <p className="bg-neutral-400 text-white text-center text-base/9 w-115 h-13 size-8 py-2 justify-self-center rounded-md shadow-3xl mb-7 flex-auto "> <strong>Try it free 7 Days</strong> then S20/mo.thereafter</p>
+        <div className=" max-w-md mx-auto bg-white p-8 rounded-lg   py-1 shadow-3xl">
+
+          <form action="formularios" onSubmit={handleSubmit} className="text-base/11 font-semibold text-gray-900 mt-6 w-full h-92">
+
+            <input className="w-full rounded-md border-2 border-neutral-300 mb-3.5 focus:outline-neutral-400 px-3 placeholder-Neutral-600  caret-neutral-400 " type="name" name="firstName" id="firstName" 
+            value={name} onChange={(e) => setName(e.target.value)} aria-label="First Name" placeholder="First Name" />
+
+          <input className="w-full rounded-md border-2 border-neutral-300 mb-3.5 focus:outline-neutral-400 placeholder-Neutral-600 px-3 caret-neutral-400" type="lastname" name="lastName" id="lastName" 
+          value={lastName} onChange={(e) => setLastName(e.target.value) } aria-label="last-name" placeholder="Last Name"  />
+
+        <input className="w-full rounded-md border-2 border-neutral-300 mb-3.5 focus:outline-neutral-400  placeholder-Neutral-600 px-3 caret-neutral-400" type="emailaddres" 
+          name="emailaddres" id="emailaddres" value={emailaddres} onChange={(e) => setemailaddres(e.target.value) } aria-label="emailaddres" placeholder="Email Addres" />
+
+       <input className="w-full rounded-md border-2 border-neutral-300 mb-3.5 focus:outline-neutral-400 placeholder-Neutral-600 px-3 caret-neutral-400" type="password" name="password" id="password" 
+            value={password} onChange={(e) => setpassword(e.target.value)}  aria-label="password" placeholder="Password" />
+
+            <button type="submit" className="bg-Neutral-50 w-full rounded-md border-Neutral-50 text-center text-1xl text-white font-bold cursor-pointer">TRY YOU FREE TRAIL</button>
+            <p className="text-center text-neutral-500 text-xs/12 -w-198">By clicking the button, you are agreeing to our <span className="text-red-400 ">Terms and Services</span></p>
+              
+           </form>
+        </div>
+      </div>
+    </div>
+   );
+}
+export default App;
+
+/*
+  <form class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
+  <h2 class="text-2xl font-bold mb-4">Contáctanos</h2>
+  
+  <label class="block mb-2 text-sm font-medium text-gray-700" for="nombre">Nombre</label>
+  <input class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" id="nombre" name="nombre" />
+
+  <label class="block mt-4 mb-2 text-sm font-medium text-gray-700" for="email">Correo Electrónico</label>
+  <input class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" type="email" id="email" name="email" />
+
+  <label class="block mt-4 mb-2 text-sm font-medium text-gray-700" for="mensaje">Mensaje</label>
+  <textarea class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" id="mensaje" name="mensaje"></textarea>
+
+  <button class="mt-4 w-full bg-blue-600 text-white font-semibold py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Enviar</button>
+</form>
+*/
