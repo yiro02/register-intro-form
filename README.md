@@ -13,16 +13,24 @@ The email address is not formatted correctly, The message for this error should 
 Desktop
 <img width="1440" height="800" alt="image" src="https://github.com/user-attachments/assets/30967d93-db9c-419a-b65e-f5ff4741d9e1" />
 **Built with**
-Twalwind CSS, React, Vite 
+
+(Twalwind CSS, React, Vite) 
 
 **Flexbox**
 
 -Mobile-first
+What I learned Implementing the client-side form validation for this challenge went easier than the previous one's, thanks to fellow Frontend Mentor developers who helped me improve the previous challenge's form validation.
 
- What I learned
-Implementing the client-side form validation for this challenge went easier than the previous one's, thanks to fellow Frontend Mentor developers who helped me improve the previous challenge's form validation.
+ ## Authors
+
+- [@yiro02]([https://www.github.com/octokatherine](https://github.com/yiro02))
+
+## Demo
+- [Insert gif or link to demo](https://tse3.mm.bing.net/th/id/OIP.KAIAA9Skk8eNggK6bDXxeQHaFj?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3)
+
 
 **Readme**
+
  Activity
 Stars
 -3 stars
