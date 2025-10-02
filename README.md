@@ -1,69 +1,40 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Project Title
 
-Currently, two official plugins are available:
+Overview
+The challenge
+Users should be able to:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+View the optimal layout for the site depending on their device's screen size
+See hover states for all interactive elements on the page
+Receive an error message when the form is submitted if:
+Any input field is empty. The message for this error should say "[Field Name] cannot be empty"
+The email address is not formatted correctly (i.e. a correct email address should have this structure: name@host.tld). The message for this error should say "Looks like this is not an email"
+Screenshot
+Desktop
 
-## Expanding the ESLint configuration
+Mobile
+Links
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+**Built with**
+Twalwind CSS, React, Vite 
+**Flexbox**
+**Mobile-first workflow**
+ 
+What I learned
+Implementing the client-side form validation for this challenge went easier than the previous one's, thanks to fellow Frontend Mentor developers who helped me improve the previous challenge's form validation.
+**  Readme**
+ Activity
+Stars
+ 3 stars
+Watchers
+ 1 watching
+Forks
+ 3 forks
+Report repository
+Languages
+- (React, TypeScript, Vite)
+- Netlify para despliegue continuo
+<img width="1894" height="907" alt="image" src="https://github.com/user-attachments/assets/87ecf561-332c-4681-a6f7-208d4b42b7e8" />
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
