@@ -26,7 +26,8 @@ What I learned Implementing the client-side form validation for this challenge w
 - [@yiro02]([https://www.github.com/octokatherine](https://github.com/yiro02))
 
 ## Demo
--  ![imagen_3](https://github.com/user-attachments/assets/c77ffccc-51f1-40d3-a164-b5c7a0285880)
+- ![OIP](https://github.com/user-attachments/assets/0f68c0ad-b2d4-450f-8d86-1e6110c178cd)
+
 
 
 **Readme**
