@@ -23,7 +23,7 @@ What I learned Implementing the client-side form validation for this challenge w
 
  ## Authors
 
-- [@yiro02]([https://www.github.com/octokatherine](https://github.com/yiro02))
+-   
 
 ## Demo
 - ![OIP](https://github.com/user-attachments/assets/0f68c0ad-b2d4-450f-8d86-1e6110c178cd)
